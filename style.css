@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.ac-gn-menuicon-bread-crust-top {
+    top: 14px;
+    transform: translateY(-3px);
+    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+}
+.ac-gn-menuicon-bread-bottom {
+    transition: transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    transform: none;
+}
+.ac-gn-menuicon-bread-crust-bottom {
+    bottom: 14px;
+    transform: translateY(3px);
+    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+}
+.ac-gn-menuicon-bread-crust {
+    display: block;
+    width: 17px;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    left: 7px;
+    z-index: 1;
+}
+#ac-globalnav .ac-gn-menuicon-bread {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 30px;
+    height: 30px;
+    box-sizing: content-box;
+}
+#ac-gn-menustate {
+    display: none;
+}
+#ac-gn-menustate:checked ~ #ac-globalnav
+.ac-gn-menuicon-bread-top,
+#ac-gn-menustate:target ~ #ac-globalnav
+.ac-gn-menuicon-bread-top {
+    transition: transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s, -webkit-transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
+    transform: rotate(45deg);
+}
+#ac-gn-menustate:checked ~ #ac-globalnav
+.ac-gn-menuicon-bread-crust-top,
+#ac-gn-menustate:target ~ #ac-globalnav
+.ac-gn-menuicon-bread-crust-top {
+    transition: transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    transform: none;
+}
+#ac-gn-menustate:checked ~ #ac-globalnav
+.ac-gn-menuicon-bread-bottom,
+#ac-gn-menustate:target ~ #ac-globalnav
+.ac-gn-menuicon-bread-bottom {
+    transition: transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s, -webkit-transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
+    transform: rotate(-45deg);
+}
+#ac-gn-menustate:checked ~ #ac-globalnav
+.ac-gn-menuicon-bread-crust-bottom,
+#ac-gn-menustate:target ~ #ac-globalnav
+.ac-gn-menuicon-bread-crust-bottom {
+    transition: transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    transform: none;
+}
+input {
+    direction: ltr;
+    text-align: left;
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    border: initial;
+}
