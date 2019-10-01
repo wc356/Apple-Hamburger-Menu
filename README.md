@@ -1,2 +1,2 @@
 # Apple-Hamburger-Menu
-Clone of Apple's Hamburger Menu
+Copied & Revised Apple's Hamburger Menu
